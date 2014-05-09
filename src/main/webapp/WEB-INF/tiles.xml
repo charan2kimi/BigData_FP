@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="base.definition"
+        template="/WEB-INF/tiles/layout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
+        <put-attribute name="menu" value="" />
+        <put-attribute name="body" value="" />
+       
+    </definition>
+    
+    <definition name="base.definition.login" extends="base.definition"
+        template="/WEB-INF/tiles/layout-login.jsp">
+    </definition>
+ 
+    <definition name="login" extends="base.definition.login">
+        <put-attribute name="title" value="Login" />
+        <put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+    </definition>
+    
+      <definition name="home" extends="base.definition">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+    </definition>
+     <definition name="physians" extends="base.definition">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/physians.jsp" />
+    </definition>
+    <definition name="addPhysician" extends="base.definition">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/addPhysician.jsp" />
+    </definition>
+    <definition name="updatePhysician" extends="base.definition">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/updatePhysician.jsp" />
+    </definition>
+  </tiles-definitions>

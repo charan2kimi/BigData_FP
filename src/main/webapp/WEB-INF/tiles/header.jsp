@@ -1,0 +1,1 @@
+<h1 style="color:#ffffff;">Mountain View Community Hospital</h1>
